@@ -1,0 +1,39 @@
+.app-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--bg-app);
+}
+
+.main-content {
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Force horizontal centering */
+}
+
+.content-container {
+    flex: 1;
+    max-width: 1400px;
+    width: 100%;
+    padding: 2rem;
+    margin: 0 auto;
+    /* Ensure visual centering */
+}
+
+.page-content {
+    animation: fadeIn 0.4s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

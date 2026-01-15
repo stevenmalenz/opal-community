@@ -1,0 +1,150 @@
+.lesson-page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+}
+
+.breadcrumb a {
+    color: var(--secondary);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary);
+}
+
+.breadcrumb .active {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.lesson-card {
+    padding: 3rem;
+}
+
+.lesson-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.lesson-meta {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.lesson-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+.lesson-content {
+    margin-bottom: 3rem;
+    min-height: 300px;
+}
+
+.empty-state {
+    text-align: center;
+    color: var(--text-secondary);
+    padding: 4rem 2rem;
+    font-style: italic;
+}
+
+/* Editor Styles */
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.editor-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+}
+
+.toolbar-label {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.toolbar-actions {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.markdown-editor {
+    width: 100%;
+    min-height: 400px;
+    padding: 1.5rem;
+    border: 2px solid var(--border-color);
+    border-radius: 8px;
+    font-family: 'Monaco', 'Courier New', monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    resize: vertical;
+    background: var(--bg-surface);
+    color: var(--text-primary);
+}
+
+.markdown-editor:focus {
+    outline: none;
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 3px rgba(60, 104, 175, 0.1);
+}
+
+.editor-preview {
+    padding: 1.5rem;
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+}
+
+.editor-preview h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+}
+
+/* Navigation */
+.lesson-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    max-width: 200px;
+}
+
+.nav-btn:hover {
+    transform: translateX(0);
+}

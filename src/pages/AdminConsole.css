@@ -1,0 +1,116 @@
+.knowledge-hub-container {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 64px);
+    overflow: hidden;
+    background-color: var(--bg-app);
+}
+
+.knowledge-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: calc(100vh - 4rem);
+    padding: 2rem;
+    /* More generous padding */
+    gap: 2rem;
+    max-width: 1200px;
+    /* "Squeeze" page layout */
+    margin: 0 auto;
+    width: 100%;
+}
+
+.knowledge-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-title h2 {
+    font-size: 2.25rem;
+    /* H1 size from guide */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.header-title p {
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.knowledge-toolbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.search-input-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 400px;
+}
+
+.search-input-wrapper input {
+    width: 100%;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0.8rem 1rem 0.8rem 2.8rem;
+    /* Chunky padding */
+    color: var(--text-primary);
+    transition: all 0.2s;
+    box-shadow: var(--shadow-sm);
+}
+
+.search-input-wrapper input:focus {
+    border-color: var(--electric-blue);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+}
+
+.search-input-wrapper .search-icon {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-secondary);
+}
+
+.btn-filter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 0 1.2rem;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    font-weight: 500;
+}
+
+.btn-filter:hover {
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.content-table-wrapper {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+    /* Default Notion-style card */
+}

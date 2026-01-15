@@ -1,0 +1,129 @@
+.scraper-view {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.scraper-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scraper-header .icon-wrapper {
+    width: 48px;
+    height: 48px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.scraper-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.scraper-header p {
+    color: var(--text-secondary);
+}
+
+.scraper-card {
+    padding: 1.5rem;
+}
+
+.scraper-input {
+    flex: 1;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+.scraper-input:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+/* Reusing console logs styles from previous AdminConsole.css but scoped */
+.console-logs {
+    background: #0f1115;
+    border: 1px solid var(--border-subtle);
+    padding: 0;
+    overflow: hidden;
+}
+
+.log-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.log-header h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-secondary);
+}
+
+.progress-bar-container {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+.progress-bar {
+    height: 100%;
+    background: var(--primary);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 10px var(--primary);
+}
+
+.log-window {
+    padding: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.85rem;
+    color: #a0a0a0;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.log-entry {
+    display: flex;
+    gap: 1rem;
+}
+
+.log-time {
+    color: #555;
+    user-select: none;
+    min-width: 80px;
+}
+
+.log-msg {
+    color: #e0e0e0;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}

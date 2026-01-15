@@ -1,0 +1,49 @@
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.dashboard-grid-v2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1.5rem;
+}
+
+@media (max-width: 1024px) {
+    .dashboard-grid-v2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+.path-card-v2 {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.path-card-v2:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-icon-large {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #eff6ff;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.btn-icon-large:hover {
+    background-color: #2563eb;
+    color: white;
+}
