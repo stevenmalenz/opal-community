@@ -9,7 +9,7 @@ const FIRE_CRAWL_API_BASE = 'https://api.firecrawl.dev/v1';
  * Core AI Response generator.
  * Strictly using Vercel AI Gateway pattern with provider/model string identifiers.
  */
-export async function generateAIResponse(messages: { role: string; content: string }[], systemPrompt?: string, jsonMode: boolean = false, useSearch: boolean = false): Promise<{ content: string; role: string; groundingMetadata?: any }> {
+export async function generateAIResponse(messages: { role: string; content: string }[], systemPrompt?: string, _jsonMode: boolean = false, _useSearch: boolean = false): Promise<{ content: string; role: string; groundingMetadata?: any }> {
     try {
         if (!AI_GATEWAY_API_KEY) {
             throw new Error('AI_GATEWAY_API_KEY is not configured. Please add it to your .env file or Vercel environment.');

@@ -45,9 +45,6 @@ export function ProgramProvider({ children }: { children: ReactNode }) {
             return [];
         }
     };
-    const saveLocalCourses = (courses: ProgramConfig[]) => {
-        localStorage.setItem(LOCAL_COURSES_KEY, JSON.stringify(courses));
-    };
     // Derived completion percentage
     const completionPercentage = currentProgram?.learningPath
         ? (currentProgram.learningPath.reduce((acc, m) => acc + m.lessons.filter(l => l.completed).length, 0) /
