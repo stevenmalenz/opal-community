@@ -1,4 +1,3 @@
-```
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -68,7 +67,7 @@ export function GraduatesPage() {
                     {cohorts.map(cohort => (
                         <button
                             key={cohort}
-                            className={`cohort - tab ${ activeCohort === cohort ? 'active' : '' } `}
+                            className={`cohort-tab ${activeCohort === cohort ? 'active' : ''}`}
                             onClick={() => setActiveCohort(cohort)}
                         >
                             {cohort === 'All' ? 'All Graduates' : cohort}
