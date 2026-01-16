@@ -42,7 +42,6 @@ export function CenterOfExcellencePage() {
                         <Link to="/tools" className="nav-link">Tools</Link>
                         <Link to="/course" className="nav-link">AI Course</Link>
                         <Link to="/agent" className="nav-link active">Agent Library</Link>
-                        <Link to="/graduates" className="nav-link">Graduates</Link>
                     </div>
 
                     <a href="https://optimizely.com/opal" target="_blank" rel="noopener noreferrer" className="btn-nav-apply">

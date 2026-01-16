@@ -33,7 +33,6 @@ import { InviteProcessor } from './components/InviteProcessor';
 import { ToolsPage } from './pages/ToolsPage';
 import { PublicCoursePage } from './pages/PublicCoursePage';
 import { CenterOfExcellencePage } from './pages/CenterOfExcellencePage';
-import { GraduatesPage } from './pages/GraduatesPage';
 
 import { GlobalStudyBuddy } from './components/GlobalStudyBuddy';
 
@@ -55,7 +54,6 @@ function App() {
                   <Route path="/course" element={<PublicCoursePage />} />
                   <Route path="/course/:courseId" element={<PublicCoursePage />} />
                   <Route path="/agent" element={<CenterOfExcellencePage />} />
-                  <Route path="/graduates" element={<GraduatesPage />} />
                   <Route path="/u/:userId" element={<PublicProfile />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/auth/callback" element={<AuthCallback />} />
