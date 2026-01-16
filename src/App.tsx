@@ -33,6 +33,7 @@ import { InviteProcessor } from './components/InviteProcessor';
 import { ToolsPage } from './pages/ToolsPage';
 import { PublicCoursePage } from './pages/PublicCoursePage';
 import { CenterOfExcellencePage } from './pages/CenterOfExcellencePage';
+import { KnowledgePage } from './pages/KnowledgePage';
 
 import { GlobalStudyBuddy } from './components/GlobalStudyBuddy';
 
@@ -54,6 +55,7 @@ function App() {
                   <Route path="/course" element={<PublicCoursePage />} />
                   <Route path="/course/:courseId" element={<PublicCoursePage />} />
                   <Route path="/agent" element={<CenterOfExcellencePage />} />
+                  <Route path="/knowledge" element={<KnowledgePage />} />
                   <Route path="/u/:userId" element={<PublicProfile />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/auth/callback" element={<AuthCallback />} />

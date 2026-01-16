@@ -180,6 +180,7 @@ export function LandingPage() {
                         <Link to="/tools" className="nav-link">Tools</Link>
                         <Link to="/course" className="nav-link">AI Course</Link>
                         <Link to="/agent" className="nav-link">Agent Library</Link>
+                        <Link to="/knowledge" className="nav-link">Knowledge Base</Link>
                     </div>
 
                     <a href="https://optimizely.com/opal" target="_blank" rel="noopener noreferrer" className="btn-nav-apply">
